@@ -57,16 +57,17 @@
   align-items: center;
 }
 
-.header__menu li a {
-  margin: 0 15px;
+.header__menu li {
+  margin: 0 1rem;
   color: #000000;
 }
 
-.header__menu li a:hover {
+.header__menu li:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.header__menu li:first-child a {
+.header__menu li:first-child {
   color: #1f8600;
 }
 
