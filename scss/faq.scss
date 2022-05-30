@@ -1,0 +1,99 @@
+.faq {
+   max-width: 1920px;
+   width: 100%;
+   padding: 1rem 0 0 0;
+   background: rgb(31, 134, 0);
+   &__container {
+      max-width: 1200px;
+      margin: 0 auto 0 auto;
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   &__title{
+      color: #e8e8e8;
+      text-align: center;
+   }
+   &__icon {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 0.7rem;
+      }
+   &__icon img{
+       height: 100%;
+   }
+	&__accordion {
+      width:100%;
+      margin: 0.75rem 2rem 2rem;
+      padding: 0 1rem;
+   }
+	&__accordionitem {
+      width: 100%;
+      background: rgba(255,255,255,0.7);
+      border-radius: 10px;
+      margin: 0.25rem 0 0;
+      opacity: 0;
+      transform: translate(-120%, 0);
+      transition: all 0.7s ease 0s;
+   }
+   &__accordionitem.animated-active {
+      opacity: 1;
+      transform: translate(0px, 0);
+      transition: all 0.7s ease 0s;
+      }
+
+	&__accordionbtn {
+      width: 100%;
+      background: rgba(255,255,255,0);
+      text-align: left;
+      padding: 1rem;
+      position: relative;
+      font-weight: 600;
+      padding-right: 3rem;
+   }
+   &__accordionbtn::before,
+   &__accordionbtn::after {
+      content: "";
+      width: 1rem;
+      height: 2px;
+      background: #000;
+      position: absolute;
+      top: 50%;
+      transition: all 0.7s ease 0s;
+   }
+   &__accordionbtn::before{
+      transform: rotate(45deg);
+      right: 1.65rem;
+   }
+   &__accordionbtn::after {
+      transform: rotate(-45deg);
+      right: 1rem;
+   }
+   &__accordionbtn.accordion-open::before{
+      transform: rotate(-45deg);
+      transition: all 0.7s ease 0s;
+   }
+   &__accordionbtn.accordion-open::after {
+      transform: rotate(45deg);
+      transition: all 0.7s ease 0s;
+   }
+	&__accordiontext {
+      padding: 0 1rem 1rem;
+      display: none;
+      transition: all 0.5s ease 0s;
+      line-height: 1.5;
+   }
+	&__accordiontext.accordion-open{
+      display: block;
+      transition: all 0.5s ease 0s;
+   }
+
+
+
+}
+
+
+
+
