@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.reviews {
+  width: 100%;
+  max-width: 1920px;
+  padding: 1rem 0 0 0;
+  background: white;
+  /* слайд */
+}
+
+.reviews__container {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+.reviews__content {
+  /*       display: flex;
+      flex-direction: column;
+      align-items: center; */
+}
+
+.reviews__title {
+  color: #1f8600;
+  text-align: center;
+}
+
+.reviews__icon {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+.reviews__logo {
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto 0.5rem;
+  background: #e8e8e88a;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px dotted #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews__logo img {
+  height: 100%;
+  margin: 1rem auto 0;
+}
+
+.reviews__author {
+  margin: 1rem 1rem 0;
+  font-weight: 700;
+}
+
+.reviews__adress {
+  margin: 0.7rem 1rem 0;
+  font-size: 0.8rem;
+}
+
+.reviews__adress span {
+  font-size: 1rem;
+  color: #1f8600;
+}
+
+.reviews__text {
+  margin: 1.5rem 1rem 2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  width: 200px;
+}
+
+.swiper {
+  width: 100%;
+  position: relative;
+}
+
+.swiper__btns {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.swiper__btns button {
+  width: 50px;
+  height: 30px;
+  box-shadow: 0px 35px 50px -7px #000000;
+  margin: 0 1rem 0;
+  position: relative;
+  border-radius: 5px;
+  color: white;
+  line-height: 45px;
+  text-align: center;
+}
+
+.swiper__btns button:first-child:after {
+  content: "";
+  width: 20px;
+  height: 30px;
+  transform: skew(30deg);
+  background: #1f8600;
+  position: absolute;
+  top: 0;
+  right: -7px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.swiper__btns button:last-child::before {
+  content: "";
+  width: 20px;
+  height: 30px;
+  transform: skew(30deg);
+  background: #9f9595;
+  position: absolute;
+  top: 0;
+  left: -7px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.swiper__btns button:first-child {
+  background: #1f8600;
+}
+
+.swiper__btns button:last-child {
+  background: #9f9595;
+}
+
+.swiper__btns button:hover {
+  transform: scale(1.1);
+}
+
+.swiper__btns button:active {
+  transform: scale(0.9);
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1f8600;
+}
