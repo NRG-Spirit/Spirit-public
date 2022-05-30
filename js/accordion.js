@@ -1,6 +1,6 @@
 const btnList = document.querySelectorAll('.faq__accordionbtn');
 for (i = 0; i < btnList.length; i++) {
-   btnList[i].addEventListener('click', accordion);
+   btnList[i].addEventListener('click', 'touch', accordion);
 }
 function accordion() {
    for (i = 0; i < btnList.length; i++) {
