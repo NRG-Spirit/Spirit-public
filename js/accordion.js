@@ -1,9 +1,9 @@
 const btnList = document.querySelectorAll('.faq__accordionbtn');
-for (i = 0; i < btnList.length; i++) {
+for (let i = 0; i < btnList.length; i++) {
    btnList[i].addEventListener('click', accordion);
 }
 function accordion() {
-   for (i = 0; i < btnList.length; i++) {
+   for (let i = 0; i < btnList.length; i++) {
       if (btnList[i] != this) {
          btnList[i].classList.remove('accordion-open');
          btnList[i].nextElementSibling.classList.remove('accordion-open');
