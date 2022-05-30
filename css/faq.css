@@ -61,6 +61,7 @@
   position: relative;
   font-weight: 600;
   padding-right: 3rem;
+  z-index: 5;
 }
 
 .faq__accordionbtn::before, .faq__accordionbtn::after {
