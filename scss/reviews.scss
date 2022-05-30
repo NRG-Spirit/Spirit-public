@@ -126,3 +126,9 @@
 .swiper-pagination-bullet-active {
    background:rgb(31, 134, 0)
  }
+
+ @media (max-width: 766px) {
+    .swiper__btns{
+       justify-content: center;
+    }
+ }
